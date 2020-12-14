@@ -1,44 +1,44 @@
 {
-	// Required fields
-	"manifest_version": 2,
-	"name": "Natale per Dani",
-	"version": "1.0.0",
-	
-	// Additional Info
-	"short_name": "Un po' di Natale",
-	"description": "Porta un po' di Natale nel tuo browser",
-	"homepage_url": "https://github.com/tom139/xmas-chrome-extension",
-	"author": "Babbo Natale Segreto",
-	// "default_locale": "it",
-	"icons": {
-		"16": "icons/icon16.png",
-		"128": "icons/icon128.png",
-		"512": "icons/icon512.png"
-	},
+  // Required fields
+  "manifest_version": 2,
+  "name": "Natale per Dani",
+  "version": "1.0.0",
+  
+  // Additional Info
+  "short_name": "Un po' di Natale",
+  "description": "Porta un po' di Natale nel tuo browser",
+  "homepage_url": "https://github.com/tom139/xmas-chrome-extension",
+  "author": "Babbo Natale Segreto",
+  // "default_locale": "it",
+  "icons": {
+    "16": "icons/icon16.png",
+    "128": "icons/icon128.png",
+    "512": "icons/icon512.png"
+  },
 
-	// Action Configuration
-	"browser_action": {
-		// the extension should display a popup in the extensions toolbar
-		"default_title": "Natale per Dani",
-		"default_popup": "popup/index.html"
-	},
-	"content_scripts": [
-		{
-			// on document_end the file `scripts/document-end.js` should run
-			"matches": ["<all_urls>"],
-			"run_at": "document_end",
-			"js": ["scripts/document-end.js"],
-			"all_frames": true
-		}
-	],
-	"background": {
-		// call the `scripts/background.js` file to listen for events
-		"persistent": false,
-		"scripts": ["scripts/background.js"]
-	},
-	"permissions": ["storage"],
-	"web_accessible_resources": [
-		// all assets in `web-accesibles/*` should be accessible from the extension
-		"web-accessibles/*"
-	]
+  // Action Configuration
+  "browser_action": {
+    // the extension should display a popup in the extensions toolbar
+    "default_title": "Natale per Dani",
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      // on document_end the file `scripts/document-end.js` should run
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      "js": ["scripts/document-end.js"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    // call the `scripts/background.js` file to listen for events
+    "persistent": false,
+    "scripts": ["scripts/background.js"]
+  },
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+    // all assets in `web-accesibles/*` should be accessible from the extension
+    "web-accessibles/*"
+  ]
 }
