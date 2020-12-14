@@ -1,0 +1,61 @@
+* {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: small;
+}
+
+.largeEmoji {
+	font-size: x-large;
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+h2 {
+	font-size: large;
+}
+
+.caption {
+	color: darkgray;
+}
+
+a:link {
+	color: darkgreen;
+}
+
+body {
+	background-color: white;
+	padding: 4px;
+	width: 256px;
+}
+
+input[type="submit"], input[type="url"], label {
+	box-sizing: border-box;
+	margin: 4px 0;
+	padding: 8px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: darkgreen;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(0, 120, 0);
+}
+
+input[type="submit"]:active {
+	background-color: darkgreen;
+}
+
+hr {
+	background: gray;
+	height: 1px;
+	border: 0px;
+ }
